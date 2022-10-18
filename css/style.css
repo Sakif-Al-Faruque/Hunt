@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner .navbar-container{
+    width: 100%;
+    border-bottom: 1px solid #fec600;
+}
+.nav-item{
+    display: block;
+    position: relative;
+}
+.nav-item:hover .nav-link{
+    color: #fec600;
+}
+.nav-item:hover::after{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 3px;
+    background-color: #fec600;
+    bottom: -60%;
+}
