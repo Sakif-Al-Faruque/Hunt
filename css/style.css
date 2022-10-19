@@ -1,3 +1,8 @@
+/* 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +10,20 @@
 
 .banner{
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    background-color: red;
+    background-image: url('../img/banner-background.png');
+    position: relative;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .banner .navbar-container{
@@ -14,6 +33,9 @@
 .nav-item{
     display: block;
     position: relative;
+}
+.nav-item .nav-link{
+    color: #fff;
 }
 .nav-item:hover .nav-link{
     color: #fec600;
@@ -25,4 +47,63 @@
     height: 3px;
     background-color: #fec600;
     bottom: -60%;
+}
+.banner .banner-content{
+    padding: 120px 0;
+    width: 100%;
+}
+.banner .banner-content .banner-slick-slider{
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 50px 0; */
+    position: relative;
+}
+.banner .banner-content .banner-slick-slider .banner-slick-slider-item{
+    text-align: center;
+    /* color: #fec600; */
+    padding: 50px 0;
+}
+
+.banner .banner-content .banner-slick-slider .banner-slick-slider-item h1{
+    color: #fff;
+    font-size: 35px;
+}
+.banner .banner-content .banner-slick-slider .banner-slick-slider-item h1 span{
+    color: #fec600;
+    font-size: 55px;
+}
+.banner .banner-content .banner-slick-slider .banner-slick-slider-item p{
+    color: #fff;
+    font-size: 14px;
+    margin: 20px 0 50px 0;
+}
+.banner .banner-content .banner-slick-slider .banner-slick-slider-item .banner-btn-holder a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 10px;
+}
+.banner .banner-content .banner-slick-slider .banner-slick-slider-item .banner-btn-holder a:hover{
+    border: 1px solid #fec600;
+    color: #fec600;
+}
+.banner .banner-content .banner-slick-slider .prev-arr,
+.banner .banner-content .banner-slick-slider .next-arr{
+    color: #fec600;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100000;
+}
+.banner .banner-content .banner-slick-slider .prev-arr{
+    left: 0px;
+}
+.banner .banner-content .banner-slick-slider .next-arr{
+    right: 0px;
 }
