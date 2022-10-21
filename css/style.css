@@ -8,6 +8,22 @@
     padding: 0;
 }
 
+.title-bar{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+.title-bar h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.title-bar p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/* banner starts */
 .banner{
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
@@ -107,3 +123,154 @@
 .banner .banner-content .banner-slick-slider .next-arr{
     right: 0px;
 }
+/* banner ends */
+
+/* about starts */
+.about{
+    padding: 20px 0;
+}
+.about-content-holder{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.about-content-holder .about-content-item{
+    width: 30%;
+    /* background-color: blue; */
+    margin: 0 30px 0 30px;
+    position: relative;
+}
+
+.about-content-holder .about-content-item:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* background-color: pink; */
+    top: -16px;
+    left: -15px;
+    height: 110%;
+    width: 110%;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+.about-content-holder .about-content-item .about-left,
+.about-content-holder .about-content-item .about-right{
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.about-content-holder .about-content-item .about-left:hover .about-left-content::before{
+    background-color: #fec600;
+}
+.about-content-holder .about-content-item .about-right{
+    text-align: left;
+}
+.about-content-holder .about-content-item .about-right:hover .about-right-content::before{
+    background-color: #fec600;
+}
+.about-content-holder .about-content-item .about-left h4,
+.about-content-holder .about-content-item .about-right h4{
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+.about-content-holder .about-content-item .about-left p,
+.about-content-holder .about-content-item .about-right p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.about-content-holder .about-content-item .about-left .about-left-content,
+.about-content-holder .about-content-item .about-right .about-right-content{
+    position: relative;
+}
+.about-content-holder .about-content-item .about-left .about-left-content::after,
+.about-content-holder .about-content-item .about-right .about-right-content::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #eeeeee;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%) rotate(45deg);
+    
+}
+
+.about-content-holder .about-content-item .about-left .about-left-content::before,
+.about-content-holder .about-content-item .about-right .about-right-content::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+
+.about-content-holder .about-content-item .about-right .about-right-content::after{
+    left: -30px;
+    
+}
+.about-content-holder .about-content-item .about-right .about-right-content::before{
+    left: -75px;
+}
+
+.about-upper,
+.about-lower{
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+}
+.about-upper .about-upper-content,
+.about-lower .about-lower-content{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.about-upper .about-upper-content::after,
+.about-lower .about-lower-content::after{
+    content: '';
+    bottom: -35px;
+    left: 50%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: #eeeeee;
+}
+.about-lower .about-lower-content::after{
+    top: -20px;
+}
+.about-upper .about-upper-content::before,
+.about-lower .about-lower-content::before{
+    content: '';
+    bottom: -70px;
+    left: 50%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #000;
+}
+.about-upper:hover .about-upper-content::before,
+.about-lower:hover .about-lower-content::before{
+    background-color: #fec600;
+}
+.about-lower .about-lower-content::before{
+    top: -55px;
+}
+/* about ends */
+
+
