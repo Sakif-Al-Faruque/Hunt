@@ -574,5 +574,73 @@
 }
 /* counter ends */
 
+/* team starts */
+.team{
+    width: 100%;
+}
+.team .team-mates{
+    width: 100%;
+    height: 400px;
+}
+
+.team .team-mates .team-member{
+    height: 350px;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    box-shadow: 0 0 3px 2px rgb(241, 241, 241);
+}
+.team .team-mates .team-member .team-mate-image{
+    display: block;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+}
+.team .team-mates .team-member .member-description{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    position: absolute;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
+    box-sizing: border-box;
+    padding: 40px 0;
+    bottom: 0;
+}
+.team .team-mates .team-member:hover{
+    height: 400px;
+}
+
+.team .team-mates .team-member:hover .member-description{
+    height: 170px;
+}
+
+.team .team-mates .team-member .member-description .team-social-icons{
+    display: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.team .team-mates .team-member .member-description .team-social-icons ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.team .team-mates .team-member .member-description .team-social-icons ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid #353535;
+    margin: 0px 10px;
+}
+.team .team-mates .team-member:hover .member-description .team-social-icons{
+    display: block;
+}
+.team .team-mates .team-member .member-description .team-social-icons ul li:hover{
+    border: 3px solid #fec600;
+    background-color: #fec600;
+}
+/* team ends */
+
 
 
