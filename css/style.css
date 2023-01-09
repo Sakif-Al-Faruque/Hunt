@@ -464,3 +464,94 @@
 
 
 
+/* price starts */
+.price{
+    background-color: #fff;
+    width: 100%;
+}
+
+.price .price-container{
+    width: 100%;
+}
+
+.price .price-container .price-item{
+    width: 100%;
+    background-color: #353535;
+    color: #fff;
+    position: relative;
+}
+.price .price-container .price-item h5{
+    padding: 45px 0;
+}
+.price .price-container .price-item .price-box{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #353535;
+    /* color: #000; */
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+.price .price-container .price-item .price-box p{
+    height: 100%;
+    width: 100%;
+    line-height: 100px;
+    position: relative;
+    z-index: 20;
+    color: #eeeeee;
+}
+.price .price-container .price-item .price-box p::before{
+    height: 85px;
+    width: 85px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #353535;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.price .price-container .price-item .price-content-box{
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+    background-color: #fff;
+    color: #000;
+    padding: 20px 0;
+    padding-top: 80px;
+    z-index: 1;
+}
+
+.price .price-container .price-item:hover{
+    background-color: #fec600;
+}
+
+.price .price-container .price-item:hover h5{
+    color: #353535;
+}
+
+.price .price-container .price-item:hover .price-box{
+    border: 3px solid #fec600;
+}
+
+.price .price-container .price-item:hover .price-box p{
+    color: #353535;
+}
+
+.price .price-container .price-item:hover .price-box p::before{
+    background-color: #fec600;
+}
+
+.price .price-container .price-item .price-content-box ul{
+    list-style: none;
+}
+.price .price-container .price-item .price-content-box ul li{
+    padding: 10px 0;
+}
+/* price ends */
+
+
+
