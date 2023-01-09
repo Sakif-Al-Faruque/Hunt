@@ -642,5 +642,27 @@
 }
 /* team ends */
 
+/* sponsor starts */
+.sponsor{
+    width: 100%;
+    background-color: #f1f1f1;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+    padding: 30px 0;
+}
+.sponsor .sponsor-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor .sponsor-content .sponsor-item{
+    width: 15%;
+    padding: 20px 20px;
+    border: 3px solid #353535;
+}
+.sponsor .sponsor-content .sponsor-item img{
+    display: inline-block;
+    width: 100%;
+}
+/* sponsor ends */
 
 
