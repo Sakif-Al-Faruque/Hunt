@@ -40,3 +40,11 @@ $('.banner-slick-slider').slick({
     nextArrow: '<span class="next-arr"><i class="fa-solid fa-angle-down"></i></span>',
     vertical: true
   });
+
+  //counter
+  jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});

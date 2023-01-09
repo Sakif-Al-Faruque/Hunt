@@ -554,4 +554,25 @@
 /* price ends */
 
 
+/* counter starts */
+.hunt-counter{
+    width: 100%;
+    background-color: #000;
+    padding: 30px 0;
+    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    color: #eeeeee;
+}
+.hunt-counter .counter-holder{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.hunt-counter .counter-holder .counter-item{
+    width: 18%;
+    /* rotate: -5deg; */
+    border: 3px solid #eeeeee;
+}
+/* counter ends */
+
+
 
