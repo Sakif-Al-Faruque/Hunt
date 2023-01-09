@@ -666,3 +666,13 @@
 /* sponsor ends */
 
 
+/* company starts */
+.company{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #353535;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+}
+/* company ends */
+
+
